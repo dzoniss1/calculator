@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <table id="buttons">
+        <tr>
+            <td colspan="4" id="calculation" class="hidden"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text" id="result" value="0"></td>
+        </tr>
+        <tr>
+            <td><button class="toprow" value="AC" onclick="clr()">AC</button></td>
+            <td><button class="toprow" value="DEL" onclick="del()">DEL</button></td>
+            <td><button class="toprow" value="%" onclick="display('%')">%</button></td>
+            <td><button class="function" value="/" onclick="display('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button class="number" value="7" onclick="display('7')">7</button></td>
+            <td><button class="number" value="8" onclick="display('8')">8</button></td>
+            <td><button class="number" value="9" onclick="display('9')">9</button></td>
+            <td><button class="function" value="*" onclick="display('x')">x</button></td>
+        </tr>
+        <tr>
+            <td><button class="number" value="4" onclick="display('4')">4</button></td>
+            <td><button class="number" value="5" onclick="display('5')">5</button></td>
+            <td><button class="number" value="6" onclick="display('6')">6</button></td>
+            <td><button class="function" value="-" onclick="display('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="number" value="1" onclick="display('1')">1</button></td>
+            <td><button class="number" value="2" onclick="display('2')">2</button></td>
+            <td><button class="number" value="3" onclick="display('3')">3</button></td>
+            <td><button class="function" value="+" onclick="display('+')">+</button></td>
+        </tr>
+        <tr>
+            <td colspan="2" ><button class="zero number" value="0" onclick="display('0')">0</button></td>
+            <td><button class="number" value="." onclick="display('.')">.</button></td>
+            <td><button class="function" value="=" onclick="sum()">=</button></td>
+        </tr>
+    </table>
+    <div class="iphone"></div>
+    <script src="script.js"></script>
+</body>
+</html>
